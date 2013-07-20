@@ -296,3 +296,7 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+section#site{
+    margin-bottom: 0;
+}

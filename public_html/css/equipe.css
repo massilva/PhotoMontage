@@ -1,0 +1,126 @@
+
+/*Geral*/
+#site > section > header h1{
+    font-size: 2.25em;
+    padding-left: 10pt;
+    padding-bottom: 0pt;
+}
+
+#site > section > header{
+    margin-top: 7em;
+    margin-bottom: 0;
+}
+
+#nav{
+    border-bottom: 10px #ff9900 solid;
+    box-shadow: 0 5px 10px #ccc;
+}
+    .circular img{
+        border: 0.3em solid #fff  ;
+        box-shadow: 0 0 1em rgba(0,0,0, .8);
+        -webkit-box-shadow: 0 0 1em rgba(0,0,0, .8);
+        -moz-box-shadow: 0 0 1em rgba(0,0,0, .8);
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        z-index: 9;
+    }
+
+    .circular a{
+        text-decoration: none;
+    }
+
+    #efeito2 .circular img:hover,
+    .circular img:hover{
+        border: 0.3em solid #2DAAE4;
+    }
+
+#efeito1 .info,
+#efeito2 .info{
+    display: none;
+}
+
+.info{
+    position: relative;
+
+    float: right;
+    margin-right: 3em;
+    padding: 15px;
+
+    box-shadow: 2px 2px .5em rgba(0,0,0, .5);
+    -webkit-box-shadow: 2px 2px .5em rgba(0,0,0, .5);
+    -moz-box-shadow: 2px 2px .5em rgba(0,0,0, .5);
+
+    width: 80%;
+    z-index: 11;
+}
+
+    .info img{
+       width: 30%;
+    }
+
+    .info .descricao{
+        text-align: justify;
+        float: right;
+        width: 65%;
+        margin: 1em;
+    }
+
+.selected{
+    float: right;
+    position: relative;
+    top: -4em;
+
+    border-color: transparent #ccc transparent transparent; 
+    border-width:30px; 
+    border-style:solid;
+
+    z-index: 11;
+}
+
+/* EFEITO 1 */ 
+#efeito1 .circular,
+#efeito1 .membro{
+    z-index: 10;
+    display: inline;
+    margin-left: 10px;
+}
+
+#efeito1 .circular,
+#efeito1 .circular img{
+    width: 12em;
+    height: 12em;
+}
+
+#efeito1 .info img,
+#efeito1 .info footer{
+    display: none;
+}
+
+/* EFEITO 2 */
+#efeito2 .circular,
+#efeito2 .membro{
+    z-index: 10;
+    display: block;
+    margin-left: 10px;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+#efeito2 .circular,
+#efeito2 .circular img{
+    width: 5em;
+    height: 5em;
+}
+
+    #efeito2 .circular:first-child{
+        margin-top: 0;
+    }
+
+    #efeito2 .circular img{
+        border: 0.3em solid #fff;
+    }
+
+    #efeito2 .selecionado .info{
+        display: block;
+    }

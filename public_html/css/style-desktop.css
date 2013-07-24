@@ -114,7 +114,8 @@
 	
 		.wrapper-first
 		{
-			padding-top: 12em;
+/*			padding-top: 12em;*/
+                    padding-top: 0em;
 		}
 
 		.wrapper-style4 .row-special

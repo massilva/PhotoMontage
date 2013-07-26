@@ -942,3 +942,104 @@
 		{
 			color: #777;
 		}
+                
+/*********************************************************************************/
+/* Fale conosco                                                                  */
+/*********************************************************************************/
+label {
+    display:block;
+    margin-top:10px;
+    letter-spacing:2px;
+    text-align: left;
+}
+
+
+
+#contato
+{
+    margin: 0 auto;
+    padding: 20px;    
+    position: relative;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#contato textarea{
+    
+    color: #242424;
+}
+
+#contato input{
+    text-align: left;
+    width: max-content;
+    background: #C2C2C2;
+    color: #242424;
+}
+
+#contato button{
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 7px 15px;
+    cursor: pointer;   
+    color: #fff;
+    font: bold 13px Tahoma, Verdana, Arial;
+    text-transform: uppercase;
+    overflow: visible; /* IE6/7 fix */
+    border: 0;  
+   
+    background-color: #7089b3;
+    background-image: -moz-linear-gradient(#a5b8da, #7089b3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a5b8da), to(#7089b3));    
+    background-image: -webkit-linear-gradient(#a5b8da, #7089b3);
+    background-image: -o-linear-gradient(#a5b8da, #7089b3);
+    background-image: -ms-linear-gradient(#a5b8da, #7089b3);
+    background-image: linear-gradient(#a5b8da, #7089b3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#a5b8da', EndColorStr='#7089b3');     
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    text-shadow: 0 1px 0 rgba(0,0,0,.3);
+    
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 3px 0 rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 3px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 3px 0 rgba(0, 0, 0, 0.7);
+    
+}
+
+#contato .button:hover
+{
+    background-color: #a5b8da;
+    background-image: -moz-linear-gradient(#7089b3, #a5b8da);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7089b3), to(#a5b8da));      
+    background-image: -webkit-linear-gradient(#7089b3, #a5b8da);
+    background-image: -o-linear-gradient(#7089b3, #a5b8da);
+    background-image: -ms-linear-gradient(#7089b3, #a5b8da);
+    background-image: linear-gradient(#7089b3, #a5b8da);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7089b3', EndColorStr='#a5b8da');     
+    
+}
+
+#contato .button:active
+{
+    background: #64799e;
+    position: relative;
+    top: 2px;
+    
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset; 
+}
+
+:invalid {
+  border: 2px solid #fff;
+  
+}
+
+#contato input:focus, textarea:focus {
+	background: #E0D7C8;
+	background: -moz-linear-gradient(top, #E0D7C8 0%, #E0D7C8 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0D7C8), color-stop(20%,#E0D7C8)); /* webkit */
+}
+

@@ -51,19 +51,23 @@ jQuery(function() {
                 
                 var pos = Math.max(section.offset().top - _nav.height()+15, 0);
                 var header = section.find("header");
-                if(header !== null){
-                    if(header.height() !== undefined){
-                        pos = Math.max(section.offset().top - _nav.height()-header.height()+15, 0);
-                    }
-                    else
+                
+                if(eFilho(section,header))
+                {
+                    if(header.height() !== undefined)
                     {
-                        pos = Math.max(section.offset().top - _nav.height()+15, 0);
+                        pos = Math.max(section.offset().top - _nav.height()-header.height()+15, 0);
                     }
                 }
                 
                 e.preventDefault();
                 _bh.animate({ scrollTop: pos }, 'slow', 'swing');
+                
             }
         });
+        
+        function eFilho(section,header){
+            return $(section.children()).html() == $(header).html();
+        }
 
 });

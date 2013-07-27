@@ -13,7 +13,7 @@ section#home > header{
 
 #nav{
     border-bottom: 10px #ff9900 solid;
-    box-shadow: 0 5px 10px #ccc;
+    /*box-shadow: 0 5px 10px #ccc;*/
 }
     .circular img{
         border: 0.3em solid #fff  ;

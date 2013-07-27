@@ -45,68 +45,68 @@
 
 	body, input, textarea
 	{
-		font-family: 'Open Sans', sans-serif;
-		line-height: 1.85em;
-		color: #888;
-		font-weight: 300;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.85em;
+            color: #888;
+            font-weight: 300;
 	}
 
 	a
 	{
-		color: #3B95C6;
-		text-decoration: underline;
-		-moz-transition: color .2s ease-in-out;
-		-webkit-transition: color .2s ease-in-out;
-		-o-transition: color .2s ease-in-out;
-		-ms-transition: color .2s ease-in-out;
-		transition: color .2s ease-in-out;
+            color: #3B95C6;
+            text-decoration: underline;
+            -moz-transition: color .2s ease-in-out;
+            -webkit-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
 	}
 	
 		a:hover
 		{
-			color: #1B75A6 !important;
+                    color: #1B75A6 !important;
 		}
 
 		a img
 		{
-			border: 0;
+                    border: 0;
 		}
 
 	strong, b
 	{
-		font-weight: 600;
-		color: #3e3e3e;
+            font-weight: 600;
+            color: #3e3e3e;
 	}
 	
 	h1, h2, h3, h4, h5, h6
 	{
-		color: #3e3e3e;
+            color: #3e3e3e;
 	}
 	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
-			text-decoration: none;
-			color: inherit;
+                    text-decoration: none;
+                    color: inherit;
 		}
 	
 	h2, h3, h4, h5, h6
 	{
-		font-weight: 700;
+            font-weight: 700;
 	}
 	
 	h1
 	{
-		font-weight: 300;
+            font-weight: 300;
 	}
 	
 		h1 strong
 		{
-			font-weight: 700;
+                    font-weight: 700;
 		}
 	
 	em, i
 	{
-		font-style: italic;
+            font-style: italic;
 	}
 	
 	form
@@ -125,14 +125,14 @@
 		form select,
 		form textarea
 		{
-			border: 0;
-			padding: 0.75em;
-			font-size: 1em;
-			border-radius: 8px;
-			background: #282828;
-			color: #bbb;
-			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
-			width: 100%;
+                    border: 0;
+                    padding: 0.75em;
+                    font-size: 1em;
+                    border-radius: 8px;
+                    background: #282828;
+                    color: #bbb;
+                    box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
+                    width: 100%;
 		}
 
 		form input[type=text]:focus,
@@ -140,12 +140,12 @@
 		form select:focus,
 		form textarea:focus
 		{
-			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025), 0px 0px 2px 2px #74CAEE;
+                    box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025), 0px 0px 2px 2px #74CAEE;
 		}
 
 		form textarea
 		{
-			height: 15em;
+                    height: 15em;
 		}
 		
 		form .formerize-placeholder
@@ -960,7 +960,8 @@ label {
     /*padding: 0;*/
     position: relative;
     text-align: left;
-    width: 900px;
+    width: 60%;
+    min-width: 600px;
 }
 
 #cabecalho  > h1
@@ -968,12 +969,12 @@ label {
     margin-bottom: 0em;
 }
 
-#contato_art textarea
+#contato_art .textarea
 {
     color: #242424;    
 }
 
-#contato_art input {
+#contato_art .input {
     text-align: left;
     width: max-content;
     background: #C2C2C2;
@@ -1052,15 +1053,15 @@ label {
 }
 
 #contato_art input:focus, textarea:focus {
-	background: #E0D7C8;
-	background: -moz-linear-gradient(top, #E0D7C8 0%, #E0D7C8 20%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0D7C8), color-stop(20%,#E0D7C8)); /* webkit */
+    background: #E0D7C8;
+    background: -moz-linear-gradient(top, #E0D7C8 0%, #E0D7C8 20%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0D7C8), color-stop(20%,#E0D7C8)); /* webkit */
 }
 
 #cabecalho{
     
     margin-bottom: 25px;
-    width: 900px;
+    /*width: 900px;*/
     /*height: 80px;*/
     position: relative;
     margin: 0 auto;
@@ -1073,4 +1074,23 @@ label {
 #contato .wrapper{
     padding: 0px;
     
+}
+
+#form{
+    margin-top:3em;
+}
+
+#topo{
+    float: right;
+    position: fixed;
+    right: 50px;
+    color: #0062DB;
+}
+
+#topo img{
+    opacity: 0.5;
+}
+
+#topo img:hover{
+    opacity: 1;
 }

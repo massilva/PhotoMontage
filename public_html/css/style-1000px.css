@@ -11,9 +11,13 @@
 	body
 	{
 		font-size: 11pt;
-		min-width: 960px;
+		min-width: 1000px;
 	}
-
+        
+        #efeito1, #efeito2{
+           width: 1000px;
+        }
+        
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
@@ -26,7 +30,8 @@
 	
 		.wrapper-first
 		{
-			padding-top: 9em;
+			/*padding-top: 9em;*/
+                        padding-top: 2em;
 		}
 
 		.wrapper-style4 .row-special

@@ -953,17 +953,28 @@ label {
     text-align: left;
 }
 
-
-
 #contato
 {
     margin: 0 auto;
-    padding: 20px;    
+    /*padding: 20px;*/    
+    padding: 0;
     position: relative;
     border: 1px solid #ddd;
     text-align: left;
 }
 
+/** Add By JAVA */
+#contato article
+{
+    padding: 20px;
+}
+
+#contato .wrapper{
+    padding: 0 0 8em 0;
+    text-align: left;
+}
+
+/** FIM */
 #contato textarea{
     
     color: #242424;

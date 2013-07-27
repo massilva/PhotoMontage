@@ -953,15 +953,18 @@ label {
     text-align: left;
 }
 
-
-
 #contato_art
 {
     margin: 0 auto;
-    /*padding: 20px;*/    
-    padding: 0;
+    padding: 20px;
+    /*padding: 0;*/
     position: relative;
     text-align: left;
+}
+
+#cabecalho  > h1
+{
+    margin-bottom: 0.5em;
 }
 
 #contato_art textarea{

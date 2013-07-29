@@ -1,19 +1,19 @@
 
 /*Geral*/
-#site > section > header h1{
+section#home > header h1{
     font-size: 2.25em;
     padding-left: 10pt;
     padding-bottom: 0pt;
 }
 
-#site > section > header{
+section#home > header{
     margin-top: 7em;
     margin-bottom: 0;
 }
 
 #nav{
     border-bottom: 10px #ff9900 solid;
-    box-shadow: 0 5px 10px #ccc;
+    /*box-shadow: 0 5px 10px #ccc;*/
 }
     .circular img{
         border: 0.3em solid #fff  ;

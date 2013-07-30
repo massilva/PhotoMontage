@@ -1048,11 +1048,6 @@ label {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset; 
 }
 
-:invalid {
-  border: 2px solid #fff;
-  
-}
-
 #contato_art .input:focus, .textarea:focus {
     background: #E0D7C8;
     background: -moz-linear-gradient(top, #E0D7C8 0%, #E0D7C8 20%); /* firefox */
@@ -1082,6 +1077,7 @@ label {
 }
 
 #topo{
+    display: none;
     float: right;
     position: fixed;
     right: 50px;

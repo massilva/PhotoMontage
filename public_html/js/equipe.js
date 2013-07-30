@@ -8,24 +8,16 @@ function selecione(sel,pos){
     $(".selecionado").removeClass("selecionado");
     $(".info").hide().delay(100);
     $(".selected").remove();
-
     selecionado.addClass("selecionado");
-
+    
     var info = selecionado.find(".info");
-    var minH = info.outerHeight(); 
-    var h = minH/4.5*pos;
+    var selected = selecionado.find(".circular");
+    var h = selected.offset().top-$("#nav").height()-70;
     
-    if(h > minH)
-        h = (-1)*minH;
-    else
-        h = (-1)*h;
-
-    info.css("top",h);
-    selecionado.append("<div class=\"selected\" style=\"display: none;\"></div>");
-    
+    h = (-1)*h;
+    info.css("top",parseInt(h));
     info.fadeIn(2000);
-    $(".selected").fadeIn(1000);
-        
+    
 }
 
 function select(sel,pos){

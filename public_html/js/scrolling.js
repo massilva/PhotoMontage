@@ -3,7 +3,6 @@ $(function(){
     
     var _top = $("#topo");
     _top.css("top",($(window).height()-80)+"px");
-    _top.toggle();
     
     $(window).scroll(function(){
         

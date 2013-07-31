@@ -11,6 +11,10 @@ section#home > header{
     margin-bottom: 0;
 }
 
+section#home{
+    padding-top: 6em;
+}
+
 #nav{
     border-bottom: 10px #ff9900 solid;
     /*box-shadow: 0 5px 10px #ccc;*/

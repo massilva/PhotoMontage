@@ -1081,6 +1081,7 @@ label {
 }
 
 #topo{
+	z-index: 900;
     display: none;
     float: right;
     position: fixed;
@@ -1094,4 +1095,52 @@ label {
 
 #topo img:hover{
     opacity: 1;
+}
+
+/*Work */
+.work_box img{
+
+	width: 72px;
+	height: 72px;
+
+		     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset; 
+    	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
+     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
+
+    opacity: 0.5;
+	-moz-opacity: 0.5;
+ 	filter: alpha(opacity=5);
+}
+
+.work_box img,
+.work_box .img{
+
+}
+
+.work_box .img{
+	
+	width: 100px;
+	height: 100px;
+	
+	background: url(images/bg.png) #fafafa;
+	margin: 0 auto;
+
+	padding: 1em;
+
+			 border-radius: 10em;
+		-moz-border-radius: 10em;
+	 -webkit-border-radius: 10em;
+	
+			 box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7) inset; 
+    	-moz-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7) inset;
+     -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7) inset;
+
+}
+
+.work .12u{
+	margin-bottom: 1.65em;
+}
+
+.work header{
+	margin: 0 0 1em 0;
 }

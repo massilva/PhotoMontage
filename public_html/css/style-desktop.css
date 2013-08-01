@@ -39,7 +39,7 @@
 
 	header
 	{
-		margin: 0 0 3em 0;
+		margin: 0 0 1em 0;
 	}
 	
 		header > span
@@ -80,7 +80,7 @@
 
 	.box
 	{
-		padding: 2em 2em 2.5em 2em;
+		padding: 2em 2em 2em 2em;
 	}
 
 		.box h3
@@ -108,14 +108,15 @@
 
 	.wrapper
 	{
-		padding: 4em 0 8em 0;
+		/* padding: 4em 0 8em 0; */
+		padding: 3em 0 8em 0;
 		text-align: center;
 	}
 	
 		.wrapper-first
 		{
 /*			padding-top: 12em;*/
-                    padding-top: 0em;
+            padding-top: 0em;
 		}
 
 		.wrapper-style4 .row-special

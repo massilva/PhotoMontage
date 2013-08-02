@@ -1100,16 +1100,13 @@ label {
 /*Work */
 .work_box img{
 
-	width: 72px;
-	height: 72px;
+    width: 72px;
+    height: 72px;
 
-		     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset; 
-    	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
-     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
+                 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset; 
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
+ -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
 
-    opacity: 0.5;
-	-moz-opacity: 0.5;
- 	filter: alpha(opacity=5);
 }
 
 .work_box img,
@@ -1137,7 +1134,7 @@ label {
 
 }
 
-.work .12u{
+.work [class^='12u']{
 	margin-bottom: 1.65em;
 }
 

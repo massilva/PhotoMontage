@@ -1,0 +1,35 @@
+#quemsomos {
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Sans-Serif;
+    font-weight: 300;
+}
+
+#quemsomos .container {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#quemsomos h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+}
+
+#quemsomos p {
+  letter-spacing: 0.1em;
+}
+
+#quemsomos .container > div {
+    width: 100%;
+}
+ 
+#quemsomos .content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2.0em;
+}

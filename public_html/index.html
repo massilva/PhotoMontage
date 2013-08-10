@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/equipe.css">
-        <link rel="stylesheet" href="css/quemsomos.css">
-        
+
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
         
         <script>
@@ -33,12 +32,11 @@
         <script src="js/equipe.js"></script>
         <script src="js/estilo.js"></script>
         <script src="js/scrolling.js"></script>
-           
+    
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="stylesheet" href="css/style-desktop.css" />
-            <link rel="stylesheet" href="css/quemsomos.css" media="screen" type="text/css" />
         </noscript>
         <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
         <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
@@ -180,7 +178,7 @@
                                                 Sed tincidunt sit amet magna nec sagittis. 
                                                 Pellentesque blandit velit vitae risus faucibus posuere.
                                                 Integer purus augue, aliquet a eros egestas, sodales gravida augue.
-                                            </footer>
+                                            </footer>show-modal-box
                                         </article>
                                     </article>
 
@@ -311,20 +309,49 @@
                             <div class="row">
                                 <div class="4u">
                                     <article class="box box-style2">
-                                        <a href="http://flypixel.com/generic-smartphone/8949517882265310" class="image image-full"><img src="images/portfolio01.jpg" alt="" /></a>
-                                        <h3><a href="http://flypixel.com/n33">Test</a></h3>
+                                        <a  class="image image-full"><img src="images/portfolio01.jpg" alt="" onclick="javascript:selectPortifolio(this,'show-modal-box box1')"/></a>
+                                        <h3><a >Test</a></h3>
+                                        <div class="modal-box box1" >
+                                             <article >
+                                                
+                                                <img src="images/me.jpg" alt="" />                 
+                                                <footer class="descricao">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                    Donec pretium aliquam nisl vitae posuere. 
+                                                    Mauris ultrices odio semper, posuere lectus sed, pellentesque nisl. 
+                                                    Maecenas id eros at odio sodales fermentum vitae in leo.
+                                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                                    Phasellus semper fringilla est, eget accumsan nisl elementum sit amet. 
+                                                    Morbi ultrices viverra orci, commodo consectetur urna vulputate nec. 
+                                                    Suspendisse ultricies mattis leo vitae aliquet. Aenean nec cursus augue, sed elementum dui.
+                                                    Sed tincidunt sit amet magna nec sagittis. 
+                                                    Pellentesque blandit velit vitae risus faucibus posuere.
+                                                    Integer purus augue, aliquet a eros egestas, sodales gravida augue.
+                                                </footer>
+                                                <button class="close"onclick="javascript:fechaModal()" >X</button>
+                                            </article>                                                                       
+                                            
+                                        </div>
                                     </article>
                                 </div>
                                 <div class="4u">
                                     <article class="box box-style2">
-                                        <a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio02.jpg" alt="" /></a>
-                                        <h3><a href="http://flypixel.com/n33">Veroeros primis</a></h3>
+                                        <a class="image image-full"><img src="images/portfolio02.jpg" alt="" onclick="javascript:selectPortifolio(this,'show-modal-box2 box2')" /></a>
+                                        <h3><a>Veroeros primis</a></h3>
+                                        <div class="modal-box box2">
+                                            <h1>Foi :)</h1>                                        
+                                            <button class="close"onclick="javascript:fechaModal()" >X</button>
+                                        </div>
                                     </article>
                                 </div>
                                 <div class="4u">
                                     <article class="box box-style2">
-                                        <a href="http://flypixel.com/wood-ui-kit/3574765984616310" class="image image-full"><img src="images/portfolio03.jpg" alt="" /></a>
-                                        <h3><a href="http://flypixel.com/wood-ui-kit/3574765984616310">Lorem ipsum</a></h3>
+                                        <a  class="image image-full"><img src="images/portfolio03.jpg" alt="" onclick="javascript:selectPortifolio(this,'show-modal-box3 box3')"/></a>
+                                        <h3><a >Lorem ipsum</a></h3>
+                                        <div class="modal-box box3">
+                                            <h1>Que Blz</h1>                                        
+                                            <button class="close"onclick="javascript:fechaModal()" >X</button>
+                                        </div>
                                     </article>
                                 </div>
                             </div>                                    
@@ -333,7 +360,6 @@
                 </div>
             </section>
 
-                  
             <!-- Área Quem Somos -->
             <section id="quem_somos">
                 <div class="wrapper wrapper-style2">
@@ -412,6 +438,13 @@
                     g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
                     s.parentNode.insertBefore(g, s)
                 }(document, 'script'));
+                
+                function modal(valor,pos){
+                    $(valor).on("click", function() {
+                        $("body").toggleClass(pos);
+                    });
+                }
+
 
         </script>
 

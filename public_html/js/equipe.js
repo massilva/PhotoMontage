@@ -38,13 +38,14 @@ function select(sel,pos){
     selecione(sel,pos); 
 }
 
-function selectPortifolio(sel,pos){ 
-     $("section").css("filter","blur(2px)");
+function selectPortifolio(sel,pos)
+{ 
+    $("section").css("filter","blur(2px)");
     $("body").toggleClass(pos);
-   
 }
 
-function fechaModal(){
+function fechaModal()
+{
     $("body").toggleClass();
 }
     

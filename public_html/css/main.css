@@ -347,16 +347,18 @@ section#site{
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
   transform: scale(0.9);
-    &:section{
-        -webkit-filter: blur(2px);
+  
+}
+
+.show-modal-box #portfolio section,
+.show-modal-box2 #portfolio section, 
+.show-modal-box3 #portfolio section{
+   -webkit-filter: blur(2px);
       -moz-filter: blur(2px);
        -ms-filter: blur(2px);
         -o-filter: blur(2px);
            filter: blur(2px);
-    }
-
 }
-
 
 .modal-box {
     z-index: 900;

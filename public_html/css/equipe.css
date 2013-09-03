@@ -65,6 +65,7 @@ section#home{
 
     .info .descricao{
         text-align: justify;
+        text-indent: 3em;
         float: right;
         width: 65%;
         margin: 1em;

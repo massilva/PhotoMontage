@@ -423,7 +423,57 @@ section#site{
 .modal-box h2 {
   font-size: 24px;
 }
+
 .imgModal{
     position: relative;
 }
 
+.qs_icon{
+   padding: 8px;
+   width: 20%;
+}
+
+.qs_icon, .qs_descricao{
+   float: left;
+}
+
+.qs_icon img{
+   width: 128px;
+   height: 128px;
+}
+
+.qs_descricao{
+    margin: 0;
+    padding: 0;
+    width: 79%;
+}
+
+    .qs_descricao p{
+        text-align: justify;
+        text-indent: 3em;
+        text-space-collapse: collapse;
+    }
+ 
+p{
+    line-height: 0.5em;
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.modal-box article img{
+    width: 100%;
+    height: 300px;
+}
+
+.modal-box footer{
+    margin-top: 1em;
+}.box-style2 {
+
+}
+
+.u4 {
+
+}

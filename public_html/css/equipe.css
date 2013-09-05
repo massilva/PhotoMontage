@@ -1,3 +1,9 @@
+@font-face
+{
+	font-family: 'Sansation_Light';
+	src: url('fonts/Sansation_Light.eot') format('embedded-opentype'),
+	     url('fonts/Sansation_Light.ttf') format('truetype');
+}
 
 /*Geral*/
 section#home > header h1{
@@ -36,7 +42,7 @@ section#home{
 
     #efeito2 .circular img:hover,
     .circular img:hover{
-        border: 0.3em solid #2DAAE4;
+        border: 0.3em solid #ff9900/*#2DAAE4*/;
     }
 
 #efeito1 .info,
@@ -49,7 +55,7 @@ section#home{
 
     float: right;
     margin-right: 3em;
-    padding: 15px;
+    padding: 25px 15px 15px 15px;
 
     box-shadow: 2px 2px .5em rgba(0,0,0, .5);
     -webkit-box-shadow: 2px 2px .5em rgba(0,0,0, .5);
@@ -71,6 +77,18 @@ section#home{
         margin: 1em;
     }
 
+    .info .descricao p:before{
+        content: url("images/quote_2.png");
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
+    
+    .info .descricao p:after{
+        content: url("images/quote_1.png");
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    
 .selected{
     float: right;
     position: relative;

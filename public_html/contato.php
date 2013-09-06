@@ -21,10 +21,13 @@ HTML;
 
        // Enviando Email
        mail($to, $subject, $body, $headers);
+       
+        // Redirecionando
+        header('Location: http://www.develops6.com/502.html');
    
     }
     
     // Redirecionando
-    header('Location: http://www.develops6.com');
+    header('Location: http://www.develops6.com/404.html');
     
 ?>

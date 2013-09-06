@@ -26,8 +26,10 @@ HTML;
         header('Location: http://www.develops6.com/502.html');
    
     }
-    
-    // Redirecionando
-    header('Location: http://www.develops6.com/404.html');
+    else
+    {
+        // Redirecionando
+        header('Location: http://www.develops6.com/404.html');
+    }
     
 ?>

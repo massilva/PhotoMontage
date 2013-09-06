@@ -1,15 +1,19 @@
 <?php
        
+    if(isSet($_POST['name'],$_POST['email'],$_POST['message']))
+    {
+        
        $name = trim(strip_tags($_POST['name']));
        $email = trim(strip_tags($_POST['email']));
        $message= htmlentities($_POST['message']);
 
-       
-       $subject = "Contato Mahdee develops";
-       $to = 'ba.elias@gmail.com';
+       $subject = "Contato MAHDE Develops";
+       $to = 'mahdeedevelops@gmail.com';
 
        $body = <<<HTML
-        $message
+       $name, enviou a mensagem:
+               
+       $message
 HTML;
 
        $headers = "From: $email\r\n";
@@ -17,7 +21,10 @@ HTML;
 
        // Enviando Email
        mail($to, $subject, $body, $headers);
-
-       // Redirecionando
-       header('Location: /develops6.com/public_html/');
+   
+    }
+    
+    // Redirecionando
+    header('Location: http://www.develops6.com');
+    
 ?>

@@ -1,5 +1,24 @@
 @charset 'UTF-8';
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(fonts/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
 @font-face
 {
 	font-family: 'FontAwesome';
@@ -1081,7 +1100,7 @@ label {
 }
 
 #topo{
-	z-index: 900;
+    z-index: 900;
     display: none;
     float: right;
     position: fixed;
@@ -1100,10 +1119,10 @@ label {
 /*Work */
 .work_box img{
 
-    width: 72px;
-    height: 72px;
+    width: 70px;
+    height: 70px;
 
-                 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset; 
+         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset; 
     -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.7) inset;
 
@@ -1116,13 +1135,13 @@ label {
 
 .work_box .img{
 	
-	width: 100px;
-	height: 100px;
-	
-	background: url(images/bg.png) #fafafa;
+	width: 128px;
+	height: 128px;
+
+        background: url(images/bg.png) #fafafa;
 	margin: 0 auto;
 
-	padding: 1em;
+	padding: 16%;
 
 			 border-radius: 10em;
 		-moz-border-radius: 10em;

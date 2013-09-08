@@ -107,12 +107,14 @@ section#home{
     z-index: 10;
     display: inline;
     margin-left: 10px;
+    float: left;
 }
 
 #efeito1 .circular,
 #efeito1 .circular img{
     width: 12em;
     height: 12em;
+    float: left;
 }
 
 #efeito1 .info img,
@@ -165,4 +167,37 @@ section#home{
         -ms-filter: grayscale(0%);    
          -o-filter: grayscale(0%);
             filter: grayscale(0%);
+}
+#efeito2 .inicial,
+#efeito2 .inicial_2,
+#efeito2 .inicial_3{
+    display: none;
+}
+
+#efeito1 .inicial,
+#efeito1 .inicial_2,
+#efeito1 .inicial_3{
+    float: left;
+    position: relative;
+    font-size: 3em;
+    width: 40px;
+    /*top: 52%;*/
+    top: 30%;
+}
+
+#efeito1 .inicial{
+    left: 41%;
+    /*left: 8%; */
+}
+
+#efeito1 .inicial_2{
+    left: 18%;
+}
+
+#efeito1 .inicial_3{
+    left: 13%
+}
+
+#efeito1{
+    margin-top: 6%;
 }

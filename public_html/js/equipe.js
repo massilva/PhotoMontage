@@ -12,10 +12,12 @@ function selecione(sel,pos){
     
     var info = selecionado.find(".info");
     var selected = selecionado.find(".circular");
-    var h = selected.offset().top-$("#nav").height()-70;
+    var _h = selected.offset().top-$("#nav").height();
     
-    h = (-1)*h;
-    info.css("top",parseInt(h));
+    _h = (-1)*_h;
+//    var min = info.css("min-height").replace("px", "");
+//    var h = (min+_h)*(-1);
+    info.css("top",parseInt(_h));
     info.fadeIn(2000);
     
 }

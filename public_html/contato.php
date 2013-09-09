@@ -8,7 +8,7 @@
        $message= htmlentities($_POST['message']);
 
        $subject = "Contato MAHDE Develops";
-       $to = 'mahdeedevelops@gmail.com';
+       $to = 'contato@develops6.com';
 
        $body = <<<HTML
        $name, enviou a mensagem:

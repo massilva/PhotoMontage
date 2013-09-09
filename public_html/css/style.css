@@ -43,6 +43,37 @@
 	font-style: normal;
 }
 
+@font-face
+{
+	font-family: 'Sawasdee';
+	src:  url('fonts/Sawasdee.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Sawasdee Bold';
+	src:  url('fonts/Sawasdee-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Sawasdee Oblique';
+	src:  url('fonts/Sawasdee-Oblique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Sawasdee Bold Oblique';
+	src:  url('fonts/Sawasdee-BoldOblique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 /*
 	Miniport 2.0 by HTML5 UP
 	html5up.net | @n33co

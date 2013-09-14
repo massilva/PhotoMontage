@@ -168,6 +168,9 @@ section#home{
          -o-filter: grayscale(0%);
             filter: grayscale(0%);
 }
+#efeito2 .info img{
+   border-radius: 10px;
+}
 #efeito2 .inicial,
 #efeito2 .inicial_2,
 #efeito2 .inicial_3{

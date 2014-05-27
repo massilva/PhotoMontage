@@ -1,470 +1,86 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <title>MAHDE Develops - www.develops6.com</title>
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/equipe.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-        
-        <script>
-            Modernizr.load({
-                test : !Modernizr.email,
-                nope : ['js/inputs.js']
-            });
-        </script>
-        
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-<!--        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />-->
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/config.js"></script>
-        <script src="js/skel.min.js"></script>
-        <script src="js/equipe.js"></script>
-        <script src="js/estilo.js"></script>
-        <script src="js/scrolling.js"></script>
-    
-        <noscript>
-            <link rel="stylesheet" href="css/skel-noscript.css" />
-            <link rel="stylesheet" href="css/style.css" />
-            <link rel="stylesheet" href="css/style-desktop.css" />
-        </noscript>
-        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
-        <!-- Site -->
-        <section id="site">
-            <div id="topo" onclick="javascript: topo();">
-                <img src="images/topo.png" alt="Topo" width="64" height="64" title="Topo">
+<head>
+    <meta charset="iso-8859-1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Phomo - Photo Montage Online</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/jquery-1.11.0.js"></script>
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/object.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            var canvas = document.getElementById("canvas");
+            var model = Models['cover'];
+            canvas.style.border = "1px solid #000";
+            canvas.width  = model.w;
+            canvas.height = model.h;
+            var sample = Samples['sample1'];
+            sample.draw(canvas,Models['cover'],5,5);
+        });
+    </script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Phomo - Photo Montage Online</a>
             </div>
-            <!-- Menu --> 
-            <nav id="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#quem_somos">Quem Somos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="navbar-collapse collapse">
 
-            <!-- Área Home -->
-            <section id="home">
-                <!-- Home -->
-                <div class="wrapper wrapper-style1 wrapper-first">
-                    <article class="container">
-<!--                        <header>
-                            <h1>Componentes da Equipe</h1>
-                        </header>-->
-                        <div class="row">
-                            <div class="u12">
-                                <div id="efeito1">                                    
-                                    
-                                    <article class="membro">
-                                        <div class="circular">
-                                            <a href="#home" onclick="javascript: select(this, 5);">
-                                                <img src="images/membros/marcos_p.png" alt="imagem do membro Marcos Silva" title="Marcos Silva" />
-                                                <div class="inicial">M</div>
-                                            </a>
-                                        </div>
-                                        <article class="info">
-                                            <header>
-                                                <h1>Marcos Silva</h1>
-                                            </header>
-                                            <img src="images/membros/marcos.jpg" alt="Marcos Silva" title="Marcos Silva" />
-                                            <footer class="descricao">
-                                                <p>
-                                                    Bacharelando em Ciência da Computação pela Universidade Federal da Bahia. 
-                                                    Interesse na área de desenvolvimento web, desktop e mobile. 
-                                                    Tem conhecimento, e é amante, de Html5, Css3, designer Responsivos e das coisas bem feita.
-                                                </p>
-                                            </footer>
-                                        </article>
-                                    </article>
-                                    
-                                    <article class="membro">
-                                        <div class="circular">
-                                            <a href="#home" onclick="javascript: select(this, 4);">
-                                                <img src="images/membros/arlindo_p.jpg" alt="imagem do membro Arlindo Junior" title="Arlindo Junior"/>
-                                                <div class="inicial">A</div>
-                                            </a>
-                                        </div>
-                                        <article class="info">
-                                            <header>
-                                                <h1>Arlindo Junior</h1>
-                                            </header>
-                                            <img src="images/membros/arlindo.jpg" alt="Arlindo Junior" title="Arlindo Junior"/>
-                                            <footer class="descricao">
-                                                <p>
-                                                    Bacharelando em Ciência da Computação pela Universidade Federal da Bahia. 
-                                                    Possui interesse na área de desenvolvimento web, desktop e mobile. Tem vasta experiência em desenvolvimento java.
-                                                </p>
-                                            </footer>
-                                        </article>
-                                    </article>
-                                    
-                                    <article class="membro">
-                                        <div class="circular">
-                                            <a href="#home" onclick="javascript: select(this, 3);">
-                                                <img src="images/membros/heitor_p.jpg" alt="imagem do membro Heitor Farias" title="Heitor Farias" />
-                                                <div class="inicial">H</div>
-                                            </a>
-                                        </div>
-                                        <article class="info">
-                                            <header>
-                                                <h1>Heitor Farias</h1>
-                                            </header>
-                                            <img src="images/membros/man.jpg" alt="Heitor Farias" title="Heitor Farias" />
-                                            <footer class="descricao">
-                                                <p>
-                                                    Bacharelando em Ciência da Computação pela Universidade Federal da Bahia.
-                                                </p>
-                                            </footer>
-                                        </article>
-                                    </article>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </div>
 
-                                    <article class="membro">
-                                        <div class="circular">
-                                            <a href="#home" onclick="javascript: select(this, 1);">
-                                                <img src="images/membros/diogo_p.jpg" alt="imagem do membro Diogo Pedro" title="Diogo Pedro" />
-                                                <div class="inicial">D</div>
-                                            </a>
-                                        </div>
-                                        <article class="info">
-                                            <header>
-                                                <h1>Diogo Pedro</h1>
-                                            </header>
-                                            <img src="images/membros/diogo.jpg" alt="Diogo Pedro" title="Diogo Pedro" />
-                                            <footer class="descricao">
-                                                <p>
-                                                    Bacharelando em Ciência da Computação pela Universidade Federal da Bahia.
-                                                </p>
-                                            </footer>
-                                        </article>
-                                    </article>
+    <div class="jumbotron">
+        <div class="container">
+            <p>Crie lindas montagem de fotos com diversos modelos para rede sociais.<br/>
+               Create beautiful photo montage with various models for social network.</p>
+        </div>
+    </div>
 
-                                    <article class="membro">
-                                        <div class="circular">
-                                            <a href="#home" onclick="javascript: select(this, 2);">
-                                                <img src="images/membros/euler__p.jpg" alt="imagem do membro Euler Santana" title="Euler Santana"/>
-                                                <div class="inicial">E</div>
-                                            </a>
-                                        </div>
-                                        <article class="info">
-                                            <header>
-                                                <h1>Euler Santana</h1>
-                                            </header>
-                                            <img src="images/membros/euler.jpg" alt="Euler Santana" title="Euler Santana" />
-                                            <footer class="descricao">
-                                                <p>
-                                                    Bacharelando em Ciência da Computação pela Universidade Federal da Bahia.
-                                                    Estudando desenvolvimento mobile com enfoque em Android e Windows Phone.
-                                                </p>
-                                            </footer>
-                                        </article>
-                                    </article>
-
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Área Work -->
-            <section id="work">
-                <div class="wrapper wrapper-style2">
-                    <article class="work">
-                        <header>
-                            <h1>Trabalhamos com</h1> 
-                        </header>
-                        <div class="container">
-                            <div class="row">
-                                <div class="12u">
-                                    <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/html5.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                HTML5
-                                            </h3>
-                                        </article>
-                                    </div>
-                                     <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/css3.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                CSS3
-                                            </h3>
-                                        </article>
-                                    </div>
-                                    <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/js2.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                JavaScript
-                                            </h3>
-                                        </article>
-                                    </div>
-                                     <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/php.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                PHP
-                                            </h3>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div class="12u">
-                                     <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/yii.png" />
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                Yii Framework
-                                            </h3>
-                                        </article>
-                                    </div>
-                                    <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/drupal.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                Drupal 7
-                                            </h3>
-                                        </article>
-                                    </div>
-                                    <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/wp.png"/>
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                Wordpress
-                                            </h3>
-                                        </article>
-                                    </div>
-                                    <div class="3u">    
-                                        <article class="work_box box box-style">
-                                            <header>
-                                                <div class="img">
-                                                    <img src="images/java.png" />
-                                                </div>
-                                            </header>
-                                            <h3>
-                                                Java
-                                            </h3>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Área Portfolio -->
-            <section id="portfolio">
-                <div class="wrapper wrapper-style3">
-                    <article>
-                        <header>
-                            <h1>Portifolio</h1>	
-                        </header>
-                        <div class="container">
-                            <div class="row">
-                                <div class="12u">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="4u">
-                                    <article class="box box-style2">
-                                        <a class="image image-full" ><img src="images/faced.png" alt="" onclick="javascript:selectPortifolio(this,'show-modal-box box1')"/></a>
-                                        <h3><a >NOVO SITE FACED</a></h3>
-                                        <div class="modal-box box1" >
-                                             <article>
-                                                <h1>NOVO site FACED UFBA.</h1>
-                                                <img src="images/faced.png" alt="" />                 
-                                                <footer class="descricao">
-                                                    O Novo Site vai proporcionar à comunidade interna e externa o rápido acesso a tudo que é produzido em nossa temporalidade espacial própria. A socialização cada vez mais veloz da informação, certamente, enriquecerá, ainda mais, o nosso com-viver potencializando todos os nossos acontecimentos humanos por nós produzidos.<br/>
-                                                    <strong>http://www.faced.ufba.br</strong>
-                                                </footer>
-                                                <button class="close" onclick="javascript:fechaModal()" >X</button>
-                                            </article>                                                                        
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="4u">
-                                    <article class="box box-style2">
-                                        <a class="image image-full"><img src="images/proinfantil.png" alt="Proinfantil" onclick="javascript:selectPortifolio(this,'show-modal-box2 box2')" /></a>
-                                        <h3><a>ProInfantil</a></h3>
-                                        <div class="modal-box box2">
-                                            <article>
-                                                <h1>Site do ProInfantil.</h1>
-                                                <img src="images/proinfantil.png" alt="" />                 
-                                                <footer class="descricao">
-                                                    <strong>http://www.proinfantil.ufba.br</strong>
-                                                </footer>
-                                                <button class="close" onclick="javascript:fechaModal()" >X</button>
-                                           </article>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="4u">
-                                    
-                                </div>
-                            </div>
-                         </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Área Quem Somos -->
-            <section id="quem_somos">
-                <div class="wrapper wrapper-style2">
-                    <article>
-                        <h1>Quem Somos</h1>
-                        <div class="container">
-                            <div class="row">
-                                <div class="12u">
-                                    <div class="container">
-                                        <div class="content">
-                                            <div class="qs_icon">
-                                                <img src="images/user.png"/>
-                                            </div>
-                                            <div class="qs_descricao">
-                                                <p>
-                                                   O MAHDE Develops é um startup que começou as suas atividades em agosto de 2012, na cidade de Salvador-BA.
-                                                   O termo "<i>MAHDE</i>" é uma brincadeira com o termo inglês "<i>MADE</i>", cuja uma das traduções é "feito", e as iniciais dos nomes dos integrantes fundadores.
-                                                   O nome "<i>MAHDE Develops</i>" segue a mesma idéia dos integrantes, onde acrescentamos o termo "Develops" (desenvolvem). 
-                                                   De maneira simples, queríamos dizer: "Marcos, Arlindo, Heitor, Diogo e Euler desenvolvem".
-                                                </p>
-                                            </div>
-                                            <div class="qs_descricao">
-                                                <p>
-                                                   Percebemos a carência do mercado de desenvolvimento de software, sites, em relação a qualidade de software.
-                                                   Com isto, <strong>MAHDE Develops</strong> tem o intuito de oferecer software de qualidade, através de conhecimentos adquiridos em trabalhos anteriores, cursos,  congressos, palestras e na faculdade.
-                                                   Investindo, periodicamente, em treinamento e qualificação dos membros por meio de cursos, congressos e palestras.
-                                                   Sempre atentos a tecnologias <strong>INOVADORAS</strong> para que possamos, assim, atender as necessidades dos nossos clientes.
-                                                </p>
-                                            </div>
-                                            <div class="qs_icon">
-                                                <img src="images/gnome_system_software_installer.png"/>
-                                            </div>
-                                        </div>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Área Contato -->
-            <section id="contato">                
-                <div class="wrapper wrapper-style4">
-                    <article id="contato_art">
-                        <header id="cabecalho">
-                            <h1>Contato</h1>
-                        </header>                 
-                        <div class="row">
-                            <div class="u12">
-                                <form action="contato.php" method="POST">
-                                    <div id="form">
-                                        <div class="row half">
-                                            <div class="6u">
-                                                <input type="text" name="name" id="name" placeholder="Nome" required="required">
-                                            </div>
-                                            <div class="6u">
-                                                <input type="email" name="email" id="email" placeholder="Email" title="example@example.com" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="row half">
-                                            <div class="12u">
-                                                <textarea name="message" id="message" placeholder="Messagem" required="required"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="12u">
-                                                <div class="9u">
-                                                    <input class="button" name="submit" type="submit" value="Enviar">
-                                                </div>
-                                                <div class="3u">
-                                                    <input class="button button-alt form-button-reset" name="limpar" type="reset" value="Limpar">
-                                                    <div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </section>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-                var _gaq = [['_setAccount', 'UA-38832993-1'], ['_trackPageview']];
-                (function(d, t) {
-                    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                    g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-                    s.parentNode.insertBefore(g, s)
-                }(document, 'script'));
-                
-                function modal(valor,pos){
-                    $(valor).on("click", function() {
-                        $("body").toggleClass(pos);
-                    });
-                }
-
-
-        </script>
-
-    </body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <footer>
+            <p>&copy; Marcos MASS</p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function(b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                        function() {
+                            (b[l].q = b[l].q || []).push(arguments)
+                        });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+    </script>
+</body>
 </html>

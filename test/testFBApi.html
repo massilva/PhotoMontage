@@ -34,8 +34,9 @@
       
       var revoke = document.createElement("button");
       revoke.id = "revoke";
+      revoke.style.background = "#34437d";
       revoke.onclick = "revokeLogin()";
-      revoke.value = "Revogar Permissão";
+      revoke.innerText = "Revogar Permissão";
       document.getElementById("login").appendChild(revoke);
 
     } else if (response.status === 'not_authorized') {

@@ -49,7 +49,7 @@
   }
 
   function getAlbumPhotos(){
-      FB.api('/me/albums',  function(resp) {
+      FB.api('/me/photos',  function(resp) {
         if (resp && !resp.error) {
           console.log(resp.data);
           console.log(resp.id);
@@ -124,7 +124,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,publish_actions" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status"></div>
 <div id="fb-root"></div>

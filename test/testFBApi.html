@@ -6,6 +6,15 @@
 </head>
 <body>
 <script>
+
+  function revokeLogin(){
+    if (response.status === 'connected') {
+      FB.api('/me/permissions', 'delete', function(response) {
+          console.log(response); // true
+      });
+    }
+  }
+
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');

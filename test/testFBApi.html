@@ -31,15 +31,6 @@
       // Logged into your app and Facebook.
       testAPI();
       getAlbumPhotos();
-      console.log(document.getElementById("revoke") == null);
-      console.log(document.getElementById("revoke"));
-      if(document.getElementById("revoke") == null){
-        var revoke = document.createElement("button");
-        revoke.id = "revoke";
-        revoke.onclick = function(){ revokeLogin() };
-        revoke.innerText = "Revogar Permissão";
-        document.getElementById("login").appendChild(revoke);
-      }
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -125,6 +116,15 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+      console.log(document.getElementById("revoke") == null);
+      console.log(document.getElementById("revoke"));
+      if(document.getElementById("revoke") == null){
+        var revoke = document.createElement("button");
+        revoke.id = "revoke";
+        revoke.onclick = function(){ revokeLogin() };
+        revoke.innerText = "Revogar Permissão";
+        document.getElementById("login").appendChild(revoke);
+      }
     });
   }
 </script>

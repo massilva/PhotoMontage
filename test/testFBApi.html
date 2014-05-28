@@ -8,11 +8,13 @@
 <script>
 
   function revokeLogin(){
-    if (response.status === 'connected') {
-      FB.api('/me/permissions', 'delete', function(response) {
-          console.log(response); // true
-      });
-    }
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        FB.api('/me/permissions', 'delete', function(response) {
+            console.log(response); // true
+        });
+      }
+    });
   }
 
   // This is called with the results from from FB.getLoginStatus().

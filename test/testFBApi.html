@@ -51,8 +51,6 @@
   function getAlbumPhotos(){
       FB.api('/me/photos',  function(resp) {
         if (resp && !resp.error) {
-          console.log(resp.data);
-          console.log(resp.id);
           var ul = document.getElementById('albums');
           for (var i=0, l=resp.data.length; i<l; i++){
               var
@@ -129,5 +127,7 @@
 <div id="status"></div>
 <div id="fb-root"></div>
 <button id="revoke" onclick="revokeLogin()">Cancelar</button>
+<hr>
+<ul id="albums"></ul>
 </body>
 </html>

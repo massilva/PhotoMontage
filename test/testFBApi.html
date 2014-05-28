@@ -41,7 +41,7 @@
 
   function getAlbumPhotos(){
       FB.api('/me/albums',  function(resp) {
-          Log.info('Albums', resp);
+          console.log(resp);
           var ul = document.getElementById('albums');
           for (var i=0, l=resp.data.length; i<l; i++){
               var

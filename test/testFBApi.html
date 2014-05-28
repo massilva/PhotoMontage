@@ -31,7 +31,8 @@
       // Logged into your app and Facebook.
       testAPI();
       getAlbumPhotos();
-      
+      console.log(document.getElementById("revoke") == null);
+      console.log(document.getElementById("revoke"));
       if(document.getElementById("revoke") == null){
         var revoke = document.createElement("button");
         revoke.id = "revoke";

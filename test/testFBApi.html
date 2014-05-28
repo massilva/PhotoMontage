@@ -116,8 +116,6 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
-      console.log(document.getElementById("revoke") == null);
-      console.log(document.getElementById("revoke"));
       if(document.getElementById("revoke") == null){
         var revoke = document.createElement("button");
         revoke.id = "revoke";

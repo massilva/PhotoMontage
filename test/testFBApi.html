@@ -124,10 +124,10 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,albums,photos" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email,publish_actions" onlogin="checkLoginState();">
 </fb:login-button>
-<button id="revoke" onclick="revokeLogin()">Cancelar</button>
 <div id="status"></div>
 <div id="fb-root"></div>
+<button id="revoke" onclick="revokeLogin()">Cancelar</button>
 </body>
 </html>

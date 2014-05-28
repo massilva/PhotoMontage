@@ -11,7 +11,9 @@
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
         FB.api('/me/permissions', 'delete', function(response) {
-            console.log(response); // true
+            document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+            document.getElementById("revoke").remove();
         });
       }
     });
@@ -29,6 +31,13 @@
       // Logged into your app and Facebook.
       testAPI();
       getAlbumPhotos();
+      
+      var revoke = document.createElement("button");
+      revole.id = "revoke";
+      revoke.onclick = "revokeLogin()";
+      revoke.value = "Revogar Permissão";
+      document.getElementById("login").appendChild(revoke);
+
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -124,11 +133,13 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
+<div id="login">
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  </fb:login-button>
+</div>
+
 <div id="status"></div>
 <div id="fb-root"></div>
-<button id="revoke" onclick="revokeLogin()">Cancelar</button>
 <hr>
 <ul id="albums"></ul>
 </body>

@@ -41,7 +41,7 @@
 
   function getAlbumPhotos(){
       FB.api('/me/albums',  function(resp) {
-          console.log(resp);
+        if (resp && !resp.error) {
           var ul = document.getElementById('albums');
           for (var i=0, l=resp.data.length; i<l; i++){
               var
@@ -53,6 +53,9 @@
               li.appendChild(a);
               ul.appendChild(li);
           }
+        }else{
+          console.log(resp.error);
+        }
       });
   };
 

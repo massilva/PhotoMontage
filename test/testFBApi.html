@@ -32,12 +32,13 @@
       testAPI();
       getAlbumPhotos();
       
-      var revoke = document.createElement("button");
-      revoke.id = "revoke";
-      revoke.onclick = function(){ revokeLogin() };
-      revoke.innerText = "Revogar Permissão";
-      document.getElementById("login").appendChild(revoke);
-
+      if(document.getElementById(revoke) == null){
+        var revoke = document.createElement("button");
+        revoke.id = "revoke";
+        revoke.onclick = function(){ revokeLogin() };
+        revoke.innerText = "Revogar Permissão";
+        document.getElementById("login").appendChild(revoke);
+      }
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -138,7 +139,7 @@
     -webkit-font-smoothing: antialiased;
     text-shadow: 0 -1px 0 #354c8c;
     margin: 0;
-    padding: 0;
+    padding: 0; 
   }
 </style>
 <!--
